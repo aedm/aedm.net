@@ -1,0 +1,116 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE, AUTHOR_NAME } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`About | ${SITE_TITLE}`} description={`About ${AUTHOR_NAME}`} />
+		<style>
+			.about-header {
+				margin-bottom: 2.5rem;
+			}
+			
+			.page-title {
+				font-size: 2.25rem;
+				margin-bottom: 1rem;
+			}
+			
+			.intro {
+				font-size: 1.15rem;
+				color: var(--text-secondary);
+				line-height: 1.8;
+			}
+			
+			.content {
+				color: var(--text-secondary);
+			}
+			
+			.content h2 {
+				color: var(--text-primary);
+				margin-top: 2.5rem;
+				margin-bottom: 1rem;
+				font-size: 1.5rem;
+			}
+			
+			.content p {
+				margin-bottom: 1.25rem;
+				line-height: 1.8;
+			}
+			
+			.content ul {
+				margin-bottom: 1.5rem;
+			}
+			
+			.content li {
+				margin-bottom: 0.5rem;
+			}
+			
+			.content a {
+				color: var(--accent-light);
+			}
+			
+			.content a:hover {
+				text-decoration: underline;
+			}
+			
+			.contact-section {
+				margin-top: 3rem;
+				padding: 1.5rem;
+				background: var(--bg-card);
+				border: 1px solid var(--border);
+				border-radius: 12px;
+			}
+			
+			.contact-section h2 {
+				margin-top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<header class="about-header">
+				<h1 class="page-title">About</h1>
+				<p class="intro">
+					I'm a software engineer with a passion for systems programming, 
+					graphics, and building things that are both elegant and performant.
+				</p>
+			</header>
+			
+			<div class="content">
+				<h2>What I Do</h2>
+				<p>
+					I spend most of my time writing code, exploring new technologies, 
+					and diving deep into the inner workings of software systems. 
+					My current interests include:
+				</p>
+				<ul>
+					<li>Rust and systems programming</li>
+					<li>Graphics programming and GPU computing</li>
+					<li>Web technologies and developer tools</li>
+					<li>Performance optimization</li>
+				</ul>
+				
+				<h2>This Blog</h2>
+				<p>
+					This is my personal space where I write about things I learn, 
+					projects I work on, and ideas I want to explore. Mostly tech-related, 
+					sometimes not. Feel free to look around.
+				</p>
+				
+				<div class="contact-section">
+					<h2>Get in Touch</h2>
+					<p>
+						Want to chat about code, collaborate on a project, or just say hi? 
+						Feel free to reach out.
+					</p>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

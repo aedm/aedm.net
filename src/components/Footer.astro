@@ -1,0 +1,39 @@
+---
+import { AUTHOR_NAME } from '../consts';
+const currentYear = new Date().getFullYear();
+---
+
+<footer>
+	<div class="container">
+		<p>&copy; {currentYear} {AUTHOR_NAME}. Built with <a href="https://astro.build" target="_blank" rel="noopener">Astro</a>.</p>
+	</div>
+</footer>
+
+<style>
+	footer {
+		margin-top: auto;
+		border-top: 1px solid var(--border);
+		background: var(--bg-secondary);
+	}
+	
+	.container {
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 2rem 1.5rem;
+		text-align: center;
+	}
+	
+	p {
+		margin: 0;
+		font-size: 0.875rem;
+		color: var(--text-muted);
+	}
+	
+	a {
+		color: var(--accent-light);
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+</style>
