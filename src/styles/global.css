@@ -15,15 +15,15 @@
 	--text-secondary: #9494a8;
 	--text-muted: #6b6b7d;
 	
-	--accent: #6366f1;
-	--accent-light: #818cf8;
-	--accent-glow: rgba(99, 102, 241, 0.3);
+	--accent: #14b8a6;
+	--accent-light: #2dd4bf;
+	--accent-glow: rgba(20, 184, 166, 0.3);
 	
 	--border: #2a2a3a;
 	--border-light: #3a3a4a;
 	
-	--gradient-accent: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
-	--gradient-subtle: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+	--gradient-accent: linear-gradient(135deg, #14b8a6, #06b6d4, #0ea5e9);
+	--gradient-subtle: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(6, 182, 212, 0.1));
 	
 	--font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	--font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
@@ -62,8 +62,8 @@ body::before {
 	right: 0;
 	bottom: 0;
 	background: 
-		radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.15), transparent),
-		radial-gradient(ellipse 60% 40% at 100% 0%, rgba(139, 92, 246, 0.1), transparent);
+		radial-gradient(ellipse 80% 50% at 50% -20%, rgba(20, 184, 166, 0.12), transparent),
+		radial-gradient(ellipse 60% 40% at 100% 0%, rgba(6, 182, 212, 0.08), transparent);
 	pointer-events: none;
 	z-index: -1;
 }

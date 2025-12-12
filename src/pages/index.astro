@@ -15,18 +15,20 @@ const posts = (await getCollection('blog'))
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			.site-title {
-				font-size: 1.5rem;
-				font-weight: 700;
+				font-size: 1.1rem;
+				font-weight: 600;
 				margin: 0 0 3rem 0;
 				font-family: var(--font-mono);
 			}
 			
 			.site-title a {
-				background: var(--gradient-accent);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-				background-clip: text;
+				color: var(--text-primary);
 				text-decoration: none;
+			}
+			
+			.intro {
+				color: var(--text-secondary);
+				margin: 0 0 2.5rem 0;
 			}
 			
 			.posts-list {
@@ -86,6 +88,7 @@ const posts = (await getCollection('blog'))
 	<body>
 		<main>
 			<h1 class="site-title"><a href="/">{SITE_TITLE}</a></h1>
+			<p class="intro">Hi, I'm Gábor.</p>
 			<div class="posts-list">
 				{posts.map((post) => {
 					const slug = post.data.slug || getSlugFromId(post.id);
