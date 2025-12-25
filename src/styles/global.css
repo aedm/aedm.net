@@ -224,11 +224,27 @@ img {
 
 .image-gallery figcaption {
 	margin-top: 0.75rem;
-	font-family: var(--font-mono);
+	font-family: var(--font-sans);
 	font-size: 0.85rem;
-	color: var(--text-muted);
+	color: var(--text-secondary);
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.image-gallery figcaption strong {
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	color: var(--accent-light);
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
+}
+
+.image-gallery figcaption span {
+	font-family: var(--font-serif);
+	font-size: 0.85rem;
+	line-height: 1.4;
+	color: var(--text-muted);
 }
 
 @media (max-width: 640px) {
