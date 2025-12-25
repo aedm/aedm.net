@@ -201,6 +201,17 @@ img {
 	border-radius: 12px;
 }
 
+/* Video */
+video {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow-md);
+	margin: 1.5rem 0;
+}
+
 /* Image gallery - responsive */
 .image-gallery {
 	display: flex;
