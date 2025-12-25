@@ -2,7 +2,7 @@
   Dark mode tech blog theme
 */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap');
 
 :root {
 	--bg-primary: #0a0a0f;
@@ -26,6 +26,7 @@
 	--gradient-subtle: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(6, 182, 212, 0.1));
 	
 	--font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	--font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
 	--font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
 	
 	--shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -43,7 +44,7 @@ html {
 }
 
 body {
-	font-family: var(--font-sans);
+	font-family: var(--font-serif);
 	margin: 0;
 	padding: 0;
 	background: var(--bg-primary);
