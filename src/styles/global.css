@@ -203,13 +203,20 @@ img {
 
 /* Video */
 video {
-	max-width: 100%;
-	width: 100%;
+	max-width: none;
+	width: calc(100% + 8rem);
 	height: auto;
 	border-radius: 12px;
 	border: 1px solid var(--border);
 	box-shadow: var(--shadow-md);
-	margin: 1.5rem 0;
+	margin: 1.5rem -4rem;
+}
+
+@media (max-width: 640px) {
+	video {
+		width: 100%;
+		margin: 1.5rem 0;
+	}
 }
 
 /* Image gallery - responsive */
@@ -217,6 +224,8 @@ video {
 	display: flex;
 	gap: 1.5rem;
 	margin: 2rem 0;
+	margin-left: -4rem;
+	margin-right: -4rem;
 }
 
 .image-gallery figure {
@@ -262,6 +271,8 @@ video {
 	.image-gallery {
 		flex-direction: column;
 		gap: 1.5rem;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	
 	.image-gallery img {
