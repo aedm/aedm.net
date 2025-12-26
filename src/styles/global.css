@@ -345,6 +345,53 @@ input:focus, textarea:focus {
 	background: var(--text-muted);
 }
 
+/* Social links */
+.social-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 3rem;
+	padding-top: 2rem;
+	border-top: 1px solid var(--border);
+}
+
+.social-links span {
+	font-family: var(--font-sans);
+	font-size: 0.9rem;
+	color: var(--text-muted);
+}
+
+.social-icons {
+	display: flex;
+	gap: 1rem;
+}
+
+.social-links a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 8px;
+	background: var(--bg-tertiary);
+	border: 1px solid var(--border);
+	color: var(--text-secondary);
+	transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+	background: var(--bg-card);
+	border-color: var(--accent);
+	color: var(--accent-light);
+	text-decoration: none;
+}
+
+.social-links svg {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
 /* Utility classes */
 .sr-only {
 	border: 0;
