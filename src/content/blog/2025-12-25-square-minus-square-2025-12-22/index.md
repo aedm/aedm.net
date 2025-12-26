@@ -6,7 +6,7 @@ pubDate: 2025-12-25
 
 I tried several coding agents to implement the following task:
 
-_There are two squares on a 2D plane, possibly overlapping. They not axis-aligned and have different sizes. Write a function that triangulates the area of the first square minus the area of the intersection._
+_There are two squares on a 2D plane, possibly overlapping. They are not axis-aligned and have different sizes. Write a function that triangulates the area of the first square minus the area of the intersection._
 
 <div class="image-gallery">
   <figure>
@@ -44,7 +44,7 @@ pub fn generate(
 }
 ```
 
-I made a little framework that displays results. It can capture screenshots and video footages.
+I made a little framework that displays results. It can capture screenshots and video footage.
 
 Several coding agents were tasked to implement the function, and I did it myself without AI, too. Agents are encouraged to generate screenshots and examine them. 
 
