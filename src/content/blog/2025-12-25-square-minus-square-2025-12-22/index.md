@@ -6,7 +6,7 @@ pubDate: 2025-12-25
 
 I tried several coding agents to implement the following task:
 
-_There are two squares on a 2D plane, possibly overlapping. They are not axis-aligned and have different sizes. Write a function that triangulates the area of the first square minus the area of the intersection._
+_There are two squares on a 2D plane, possibly overlapping. They are not axis-aligned and have different sizes. Write a function that triangulates the area of the first square minus the area of the intersection. Use the least amount of triangles._
 
 <div class="image-gallery">
   <figure>
@@ -69,6 +69,7 @@ Some takeaways:
 - To date, no LLM was able to solve the task successfully.
 - Nearly all of the models generate screenshots and examine them to fix bugs. They are surprisingly good at it, top models identify real issues correctly. This highlights the importance of the feedback loop: always provide a way for the agent to check its own work.
 - During development, I ran the test several times. There is no conclusive winner. Best models (Opus, Gemini 3 Pro, GPT 5.2) all came out on top sometimes. But sometimes they generate code that crashes.
+- Gemini 3 Flash might seem to have solved the task well but it adds unnecessary vertices and triangles.
 
 
 Full code on [Github](https://github.com/aedm/square-minus-square).
