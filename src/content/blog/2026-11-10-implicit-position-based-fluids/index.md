@@ -8,33 +8,11 @@ I tried several coding agents to implement a recent graphics research paper:
 
 _Implement the fluid simulation described in the white paper [Implicit Position-Based Fluids](https://graphics.cs.utah.edu/research/projects/ipbf/) (Diaz, Hsu, Montalvo-Ruiz, Giles, Yuksel — SIGGRAPH Asia 2025)._
 
-TODO: exact prompt given to the agents.
-
-IPBF is an incompressible SPH method from the University of Utah. Each time step minimizes a variational energy that pushes the fluid toward constant density, using a second-order implicit descent: every particle solves a small 3×3 Newton step, and all particles are updated in parallel with a relaxed Jacobi iteration. The paper claims it stays stable even at extreme time steps, where other methods like IISPH and DFSPH blow up, and that it compresses less than classic Position-Based Fluids.
-
-This is a different kind of task than the [previous one](/blog/square-minus-square-2025-12-22/). Instead of a small, well-defined function, the agent has to read a paper, understand the math, and fill in the gaps the paper leaves open, like neighbor search and parameter choices.
-
-TODO: language, framework, and what the harness provides (rendering, screenshots, video capture).
-
-Several coding agents were tasked to implement the simulation. Agents are encouraged to generate screenshots and examine them.
-
-TODO: number of runs per agent, and how the result was picked.
-
-
-Video capture of the results:
-
 <video controls playsinline>
   <source src="https://cdn.aedm.net/2026-11-10-ibpf.mp4" type="video/mp4" />
 </video>
 
-
-Some takeaways:
-- TODO
-- TODO
-- TODO
-
-
-Full code on [Github](TODO).
+This is a different kind of task than the [previous one](/blog/square-minus-square-2025-12-22/). Instead of a small, well-defined function, the agent has to read a paper, understand the math, and fill in the gaps the paper leaves open, like neighbor search and parameter choices.
 
 <div class="social-links">
   <span>Discuss article on</span>
